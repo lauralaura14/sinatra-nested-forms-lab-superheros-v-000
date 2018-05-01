@@ -1,15 +1,15 @@
 <h1>Teams and Heroes List</h1>
 
 <div class="team">
-  <p>Team Name: <%= @team.name %></p>
+  <p>Team Name <%= @team.name %></p>
   <p>Team Motto: <%= @team.motto %></p>
 </div><br>
 
 <h1>Heroes</h1>
 <% @heroes.each do |hero| %>
   <div class="hero">
-    <p>Hero's Name: <%= hero.name %></p><br>
-    <p>Hero's Power: <%= hero.power %></p><br>
-    <p>Hero's Biography: <%= hero.biography %></p><br>
+    <p>Hero Name: <%= hero.name %></p><br>
+    <p>Hero Power: <%= hero.power %></p><br>
+    <p>Hero Biography: <%= hero.biography %></p><br>
   </div><br>
 <% end %>
